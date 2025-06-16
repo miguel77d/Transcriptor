@@ -6,7 +6,9 @@ from converter2 import transcribir_audio_whisper
 
 app = FastAPI()
 
-@app.post("/transcribir/")
+@app.post("/")
+def root():
+    return {"message": "Bienvenido a la API de Transcripción con Whisper!"}
 async def transcribir_audio(file: UploadFile = File(...)):
     try:
         # Guardar archivo temporal
