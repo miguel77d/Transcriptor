@@ -9,7 +9,7 @@ app = FastAPI()
 # Ruta raíz: bienvenida
 @app.get("/")
 def root():
-    return {"message": "Bienvenido a la API de Transcripción con Whisper!"}
+    return {"message": "Bienvenido a la API de Transcripción con Whisper! 🎧"}
 
 # Ruta POST para transcribir audio
 @app.post("/transcribir")
